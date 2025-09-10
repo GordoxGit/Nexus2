@@ -8,6 +8,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Collection; // <-- IMPORT AJOUTÉ
+import java.util.Map;       // <-- IMPORT AJOUTÉ
 import java.util.Optional;
 
 public class ArenaCommand implements CommandExecutor {
