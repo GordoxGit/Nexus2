@@ -1,0 +1,47 @@
+# ===================================
+# 🚀 Configuration du plugin Nexus
+# ===================================
+
+# Configuration de la base de données
+database:
+  # Informations de connexion
+  host: "localhost"
+  port: 3306
+  database: "nexus"
+  username: "nexus_user"
+  password: "your_password_here"
+
+  # Paramètres de connexion HikariCP
+  hikari:
+    maximum-pool-size: 10
+    minimum-idle: 5
+    connection-timeout: 30000
+    idle-timeout: 600000
+    max-lifetime: 1800000
+    leak-detection-threshold: 60000
+
+# Configuration du gameplay (sera utilisé dans de futurs tickets)
+game:
+  arena:
+    max-players-per-arena: 24
+    capture-time-seconds: 30
+    respawn-time-seconds: 5
+
+  economy:
+    kill-reward: 100
+    assist-reward: 50
+    victory-bonus: 200
+    defeat-bonus: [100, 150]
+
+# Système de classement (sera utilisé dans de futurs tickets)
+ranking:
+  elo:
+    starting-rating: 1000
+    k-factor: 32
+    seasons:
+      duration-months: 3
+      soft-reset-percentage: 0.8
+
+# Options de débogage
+debug:
+  enabled: false
