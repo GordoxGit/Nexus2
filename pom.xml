@@ -44,6 +44,10 @@
                             </transformers>
                             <relocations>
                                 <relocation>
+                                    <pattern>org.mariadb.jdbc</pattern>
+                                    <shadedPattern>fr.heneria.nexus.libs.mariadb.jdbc</shadedPattern>
+                                </relocation>
+                                <relocation>
                                     <pattern>com.zaxxer.hikari</pattern>
                                     <shadedPattern>fr.heneria.nexus.libs.hikari</shadedPattern>
                                 </relocation>
