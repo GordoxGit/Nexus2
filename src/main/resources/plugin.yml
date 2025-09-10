@@ -7,3 +7,10 @@ description: Plugin principal pour le mode de jeu Nexus sur le serveur Heneria.
 softdepend:
   - decentholograms
   - PlaceholderAPI
+
+commands:
+  nx:
+    description: Commande principale du plugin Nexus.
+    usage: /<command> [args]
+    permission: nexus.admin
+    permission-message: Vous n'avez pas la permission d'utiliser cette commande.
